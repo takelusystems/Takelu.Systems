@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Takelu Systems</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="contato-page">
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="Logo Takelu Systems" class="logo-img">
+                <span class="brand-text">Takelu Systems</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-bg">
+        </div>
+        <div class="container">
+            <h1>Vamos Conversar?</h1>
+            <p>Estou pronta para transformar sua visão em realidade</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contato-section">
+        <div class="container">
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h2>Entre em Contato</h2>
+                    <p class="subtitle">Escolha o melhor canal para você</p>
+
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:takelusystems@gmail.com">takelusystems@gmail.com</a></p>
+                        <span class="info-note">Respondo em até 24 horas</span>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-camera"></i>
+                        <h3>Instagram</h3>
+                        <p><a href="https://instagram.com/takelusystems" target="_blank">@takelusystems</a></p>
+                        <span class="info-note">DM direto ou comente no feed</span>
+                    </div>
+
+                    <div class="contact-hours">
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta: 9h às 17h</p>
+                    </div>
+                </div>
+
+                <form class="contato-form" id="contactForm">
+                    <h2>Envie sua Mensagem</h2>
+                    
+                    <div class="form-group">
+                        <label>Seu Nome</label>
+                        <input type="text" id="name" placeholder="Como você se chama?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Seu Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Telefone (opcional)</label>
+                        <input type="tel" id="phone" placeholder="(11) 99999-9999">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Qual é o seu negócio?</label>
+                        <select id="business" required>
+                            <option value="">-- Selecione uma opção --</option>
+                            <option value="advocacia">Advocacia</option>
+                            <option value="beleza">Beleza & Bem-estar</option>
+                            <option value="retail">Loja/Varejo</option>
+                            <option value="servicos">Serviços</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tipo de Serviço</label>
+                        <select id="service" required>
+                            <option value="">-- Selecione uma opção --</option>
+                            <option value="website-novo">Website Novo</option>
+                            <option value="website-reforma">Reformular Website Existente</option>
+                            <option value="consultoria">Consultoria de Design</option>
+                            <option value="outro-servico">Outro Serviço</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Conte-me sobre seu projeto</label>
+                        <textarea id="message" placeholder="Descreva sua visão, ideias, necessidades..." rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="privacy" required>
+                        <label for="privacy">Concordo em receber comunicações sobre meu projeto</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    <p class="form-note">Seus dados estão seguros e nunca serão compartilhados</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Me -->
+    <section class="why-section">
+        <div class="bg-why">
+        </div>
+        <div class="container">
+            <h2>Por que trabalhar comigo?</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    
+                    <h3>Comunicação Clara</h3>
+                    <p>Explico tudo com clareza, sem jargões técnicos desnecessários</p>
+                </div>
+                <div class="why-card">
+                    
+                    <h3>Foco no Resultado</h3>
+                    <p>Seu website funciona para converter visitantes em clientes</p>
+                </div>
+                <div class="why-card">
+                    
+                    <h3>Parceria Real</h3>
+                    <p>Trabalho com você em cada etapa do projeto</p>
+                </div>
+                <div class="why-card">
+                    
+                    <h3>Prazos Respeitados</h3>
+                    <p>Entrego no prazo combinado, sem surpresas</p>
+                </div>
+                <div class="why-card">
+                    
+                    <h3>Suporte Contínuo</h3>
+                    <p>Você não fica sozinho após o lançamento</p>
+                </div>
+                <div class="why-card">
+                    
+                    <h3>Design Personalizado</h3>
+                    <p>Sua identidade visual reflete quem você é e o que seu negócio representa</p>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="bg-footer">
+        </div>
+        <div class="container">
+            <!-- Marca no Topo -->
+            <div class="footer-header">
+                <div class="footer-brand">
+                    <h3>Takelu Systems</h3>
+                    <p>Criando experiências digitais memoráveis</p>
+                </div>
+            </div>
+
+            <!-- Navegação e Contato -->
+             <div class="footer-wrapper">
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="footer-content">
+                        <div class="social-links">
+                            <a href="https://instagram.com/takelusystems" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/5511951760383" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <div class="footer-content">
+                        <ul class="footer-links-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="trabalhos.html">Trabalhos</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Takelu Systems. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

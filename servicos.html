@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços - Takelu Systems</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="servicos-page">
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/images/logo.png" alt="Logo Takelu Systems" class="logo-img">
+                <span class="brand-text">Takelu Systems</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="trabalhos.html">Trabalhos</a></li>
+                <li><a href="servicos.html" class="active">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="header-bg">
+        </div>
+        <div class="container">
+            <h1>Serviços</h1>
+            <p>Explore e customize suas paletas de cores</p>
+        </div>
+    </section>
+
+    <!-- Services Content -->
+    <section class="servicos-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px; color: var(--primary-rose);">Visualizador de Paletas</h2>
+            <p style="text-align: center; margin-bottom: 50px; font-size: 16px; color: var(--text-gray); max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                Explore nossas paletas de cores cuidadosamente selecionadas e testadas. Se preferir, recomendamos a plataforma <strong><a href="https://coolors.co" target="_blank" style="color: var(--primary-rose-dark); text-decoration: none;">Coolors.co</a></strong> para customizar a sua própria. Clique nas cores para copiar o código HEX, ou nos compartilhe as cores que representam a essência do seu negócio para personalizarmos ainda mais.
+            </p>
+
+            <!-- Color Palette Selector -->
+            <div class="palette-selector">
+                <button class="palette-btn active" data-palette="rosa-moderno">Rosa Moderno</button>
+                <button class="palette-btn" data-palette="rosa-preto">Rosa & Preto</button>
+                <button class="palette-btn" data-palette="rosa-suave">Rosa Suave</button>
+                <button class="palette-btn" data-palette="rosa-premium">Rosa Premium</button>
+                <button class="palette-btn" data-palette="azul-marino">Azul Marinho</button>
+                <button class="palette-btn" data-palette="verde-natureza">Verde Natureza</button>
+                <button class="palette-btn" data-palette="laranja-quente">Laranja Quente</button>
+                <button class="palette-btn" data-palette="roxo-elegante">Roxo Elegante</button>
+                <button class="palette-btn" data-palette="cinza-minimalista">Cinza Minimalista</button>
+                <button class="palette-btn" data-palette="turquesa-tropical">Turquesa Tropical</button>
+                <button class="palette-btn" data-palette="vermelho-luxo">Vermelho Luxo</button>
+                <button class="palette-btn" data-palette="amarelo-dourado">Amarelo Dourado</button>
+                <button class="palette-btn" data-palette="magenta-vibrante">Magenta Vibrante</button>
+                <button class="palette-btn" data-palette="coral-vivo">Coral Vivo</button>
+                <button class="palette-btn" data-palette="indigo-profundo">Índigo Profundo</button>
+                <button class="palette-btn" data-palette="marrom-rustico">Marrom Rústico</button>
+                <button class="palette-btn" data-palette="ciano-moderno">Ciano Moderno</button>
+                <button class="palette-btn" data-palette="paleta-vintage">Vintage Clássico</button>
+                <button class="palette-btn" data-palette="paleta-verde-jade">Verde Jade</button>
+                <button class="palette-btn" data-palette="paleta-laranja-tropical">Laranja Tropical</button>
+                <button class="palette-btn" data-palette="paleta-roxo-regalia">Roxo Regalia</button>
+                <button class="palette-btn" data-palette="paleta-turquesa-premium">Turquesa Premium</button>
+                <button class="palette-btn" data-palette="paleta-vermelho-vino">Vermelho Vinho</button>
+                <button class="palette-btn" data-palette="paleta-cinza-elegante">Cinza Elegante</button>
+                <button class="palette-btn" data-palette="paleta-lima-fresco">Lima Fresco</button>
+                <button class="palette-btn" data-palette="paleta-tons-terra">Tons de Terra</button>
+                <button class="palette-btn" data-palette="paleta-pastel-delicado">Pastel Delicado</button>
+                <button class="palette-btn" data-palette="paleta-neon-futurista">Neon Futurista</button>
+                <button class="palette-btn" data-palette="paleta-azul-marinho">Azul Marinho</button>
+                <button class="palette-btn" data-palette="paleta-ouro-luxuoso">Ouro Luxuoso</button>
+            </div>
+
+            <!-- Color Visualization -->
+            <div class="color-visualizer">
+                <div class="palette-display" id="paletteDisplay">
+                    <!-- Paleta será preenchida por JavaScript -->
+                </div>
+
+                <!-- Color Info Cards -->
+                <div class="palette-colors-grid">
+                    <div class="color-card" id="color1">
+                        <div class="color-box"></div>
+                        <div class="color-info">
+                            <h4></h4>
+                            <code></code>
+                            <span class="copy-btn">Copiar</span>
+                        </div>
+                    </div>
+                    <div class="color-card" id="color2">
+                        <div class="color-box"></div>
+                        <div class="color-info">
+                            <h4></h4>
+                            <code></code>
+                            <span class="copy-btn">Copiar</span>
+                        </div>
+                    </div>
+                    <div class="color-card" id="color3">
+                        <div class="color-box"></div>
+                        <div class="color-info">
+                            <h4></h4>
+                            <code></code>
+                            <span class="copy-btn">Copiar</span>
+                        </div>
+                    </div>
+                    <div class="color-card" id="color4">
+                        <div class="color-box"></div>
+                        <div class="color-info">
+                            <h4></h4>
+                            <code></code>
+                            <span class="copy-btn">Copiar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Palette Description -->
+                <div class="palette-description">
+                    <h3 id="paletteName"></h3>
+                    <p id="paletteDesc"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="bg-cta">
+            <div class="vine vine-2"></div>
+        </div>
+        <div class="container cta-content">
+            <h2>Encontrou seu estilo?</h2>
+            <p>Vamos conversar sobre como trazer isso à vida!</p>
+            <a href="contato.html" class="btn btn-light">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="bg-footer">
+        </div>
+        <div class="container">
+            <!-- Marca no Topo -->
+            <div class="footer-header">
+                <div class="footer-brand">
+                    <h3>Takelu Systems</h3>
+                    <p>Criando experiências digitais memoráveis</p>
+                </div>
+            </div>
+
+            <!-- Navegação e Contato -->
+             <div class="footer-wrapper">
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="footer-content">
+                        <div class="social-links">
+                            <a href="https://instagram.com/takelusystems" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/5511951760383" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Navegação</h4>
+                    <div class="footer-content">
+                        <ul class="footer-links-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="trabalhos.html">Trabalhos</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Takelu Systems. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

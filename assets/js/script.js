@@ -532,7 +532,7 @@ ${message}
     `.trim();
 
     // Redirecionar para mailto
-    window.location.href = `mailto:takelusystems@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:takelu.systems@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     // Limpar formulário
     setTimeout(() => {

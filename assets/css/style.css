@@ -1,27 +1,27 @@
 /* ===== FONTES ===== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600&display=swap');
 
-/* ===== PALETA DE CORES - ROSA, PRETO E BRANCO ===== */
+/* ===== PALETA DE CORES - ROSA, PRETO E BRANCO (EQUILIBRADO E PROFISSIONAL) ===== */
 :root {
     /* Cores Principais */
-    --primary-rose: #D4909E;
-    --primary-rose-dark: #B87584;
-    --primary-rose-accent: #E0ACBE;
+    --primary-rose: #D84C6E;
+    --primary-rose-dark: #A83A54;
+    --primary-rose-light: #F0D9E6;
     --primary-black: #1F1F1F;
     --primary-white: #FFFFFF;
-    --primary-cream: #FFFBF7;
+    --primary-cream: #FAFAFA;
     
-    /* Tons Pastéis */
-    --pastel-rose-light: #E8D5DF;
-    --pastel-rose-very-light: #F2E5EB;
-    --pastel-tan: #E8D9D0;
-    --pastel-beige: #F0E8DD;
+    /* Tons Neutros */
+    --neutral-light: #F5F5F5;
+    --neutral-gray: #E8E8E8;
+    --neutral-medium: #999999;
+    --neutral-dark: #555555;
     
     /* Neutros */
     --text-dark: #2D2D2D;
-    --text-gray: #6B6B6B;
-    --text-light: #8B8B8B;
-    --border-light: #E8D9D0;
+    --text-gray: #666666;
+    --text-light: #999999;
+    --border-light: #EEEEEE;
     
     /* Sombras */
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -80,7 +80,7 @@ a {
 }
 
 a:hover {
-    color: var(--primary-rose-dark);
+    color: var(--primary-rose);
 }
 
 .btn {
@@ -107,7 +107,7 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-rose), var(--primary-black));
+    background: linear-gradient(135deg, var(--primary-rose), var(--primary-rose-dark));
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
 }
@@ -132,7 +132,7 @@ a:hover {
 
 .btn-light:hover {
     background-color: var(--primary-rose-dark);
-    color: var(--primary-cream);
+    color: white;
 }
 
 /* ===== NAVBAR ===== */
@@ -224,7 +224,7 @@ a:hover {
 /* ===== HERO SECTION ===== */
 .hero {
     padding: 80px 0;
-    background: linear-gradient(135deg, #FAE8F0 0%, var(--primary-cream) 50%, #F5D5E8 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-cream) 50%, #F5F5F5 100%);
     position: relative;
     overflow: hidden;
     min-height: 750px;
@@ -241,7 +241,7 @@ a:hover {
     transform: translateY(-50%);
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle at 30% 50%, rgba(212, 144, 158, 0.15) 0%, rgba(212, 144, 158, 0.05) 40%, transparent 70%);
+    background: radial-gradient(circle at 30% 50%, rgba(216, 76, 110, 0.08) 0%, rgba(216, 76, 110, 0.02) 40%, transparent 70%);
     border-radius: 50%;
     z-index: 0;
 }
@@ -302,7 +302,7 @@ a:hover {
 
 .hero-badge {
     display: inline-block;
-    background: var(--pastel-rose-light);
+    background: var(--primary-rose-light);
     color: var(--primary-rose-dark);
     padding: 8px 18px;
     border-radius: 25px;
@@ -340,7 +340,7 @@ a:hover {
     background: linear-gradient(90deg, var(--primary-rose), var(--primary-rose-dark));
     margin: 25px 0 30px 0;
     border-radius: 3px;
-    box-shadow: 0 2px 10px rgba(184, 117, 132, 0.3);
+    box-shadow: 0 2px 10px rgba(216, 76, 110, 0.3);
 }
 
 .hero-description {
@@ -466,7 +466,7 @@ a:hover {
 }
 
 .highlight-card {
-    background: linear-gradient(135deg, #FAE8F0, #FFFBF7);
+    background: linear-gradient(135deg, #F5F5F5, #FAFAFA);
     padding: 35px;
     border-radius: 12px;
     text-align: center;
@@ -498,7 +498,7 @@ a:hover {
 /* ===== PAGE HEADER ===== */
 .page-header {
     padding: 80px 0;
-    background: linear-gradient(135deg, #FAE8F0 0%, var(--primary-cream) 50%, #F5D5E8 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, var(--primary-cream) 50%, #F5F5F5 100%);
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -584,7 +584,7 @@ a:hover {
 }
 
 .about-card {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--pastel-beige));
+    background: linear-gradient(135deg, var(--primary-rose-light), #F5F5F5);
     padding: 30px;
     border-radius: 12px;
     border-left: 5px solid var(--primary-rose);
@@ -613,7 +613,7 @@ a:hover {
 /* ===== VALUES SECTION ===== */
 .values-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--primary-cream));
+    background: linear-gradient(135deg, var(--primary-rose-light), var(--primary-cream));
     position: relative;
     overflow: hidden;
 }
@@ -751,7 +751,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(232, 168, 200, 0.95);
+    background: rgba(216, 76, 110, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -764,7 +764,7 @@ a:hover {
 }
 
 .btn-view {
-    background-color: var(--primary-cream);
+    background-color: white;
     color: var(--primary-rose-dark);
     padding: 12px 28px;
     border-radius: 25px;
@@ -775,7 +775,7 @@ a:hover {
 }
 
 .btn-view:hover {
-    background-color: white;
+    background-color: var(--primary-rose-light);
     color: var(--primary-rose-dark);
 }
 
@@ -803,7 +803,7 @@ a:hover {
 
 .tag {
     display: inline-block;
-    background-color: var(--pastel-rose-light);
+    background-color: var(--primary-rose-light);
     color: var(--primary-rose-dark);
     padding: 6px 14px;
     border-radius: 15px;
@@ -828,7 +828,7 @@ a:hover {
 }
 
 .servico-card {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--pastel-beige));
+    background: linear-gradient(135deg, var(--primary-rose-light), #F5F5F5);
     padding: 40px;
     border-radius: 12px;
     box-shadow: var(--shadow-sm);
@@ -864,8 +864,8 @@ a:hover {
 }
 
 .paletas-principal {
-    background: linear-gradient(135deg, rgba(232, 155, 183, 0.08), rgba(31, 31, 31, 0.04));
-    border: 2px solid var(--pastel-rose-light);
+    background: linear-gradient(135deg, rgba(216, 76, 110, 0.08), rgba(31, 31, 31, 0.04));
+    border: 2px solid var(--primary-rose-light);
     margin-bottom: 40px;
 }
 
@@ -892,7 +892,7 @@ a:hover {
 
 .paleta-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 12px 24px rgba(232, 168, 200, 0.2);
+    box-shadow: 0 12px 24px rgba(37, 99, 235, 0.2);
 }
 
 .paleta-preview {
@@ -932,23 +932,23 @@ a:hover {
 
 .rose-primary { background-color: var(--primary-rose); }
 .rose-dark { background-color: var(--primary-black); }
-.rose-accent { background-color: var(--primary-rose-accent); }
+.rose-accent { background-color: var(--primary-rose-light); }
 .rose-light { background-color: var(--primary-cream); }
 
 .forest-dark { background-color: var(--primary-black); }
 .forest-green { background-color: var(--primary-rose); }
-.forest-light { background-color: #FAE8F0; }
-.forest-beige { background-color: #E8D9CC; }
+.forest-light { background-color: #F5F5F5; }
+.forest-beige { background-color: #EEEEEE; }
 
-.earthy-brown { background-color: #C8A894; }
-.earthy-green { background-color: var(--primary-rose-accent); }
-.earthy-tan { background-color: #D8C4B0; }
-.earthy-cream { background-color: #EBE0D0; }
+.earthy-brown { background-color: #999999; }
+.earthy-green { background-color: var(--primary-rose-light); }
+.earthy-tan { background-color: #CCCCCC; }
+.earthy-cream { background-color: #FAFAFA; }
 
 .luxury-dark { background-color: var(--primary-black); }
 .luxury-gold { background-color: var(--primary-rose); }
-.luxury-light { background-color: #E8D8C8; }
-.luxury-cream { background-color: #F5EDE0; }
+.luxury-light { background-color: var(--primary-rose-light); }
+.luxury-cream { background-color: #FAFAFA; }
 
 .paleta p {
     font-size: 12px;
@@ -973,7 +973,7 @@ a:hover {
     align-items: center;
     gap: 12px;
     font-size: 14px;
-    border-bottom: 1px solid rgba(232, 168, 200, 0.2);
+    border-bottom: 1px solid rgba(37, 99, 235, 0.1);
 }
 
 .estilos-list li:last-child,
@@ -992,7 +992,7 @@ a:hover {
 /* ===== CONFIGURADOR ===== */
 .configurador-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, #FAE8F0, var(--primary-cream));
+    background: linear-gradient(135deg, var(--primary-rose-light), var(--primary-cream));
     position: relative;
     overflow: hidden;
 }
@@ -1066,7 +1066,7 @@ a:hover {
 .config-group select:focus {
     outline: none;
     border-color: var(--primary-rose-dark);
-    box-shadow: 0 0 0 3px rgba(217, 123, 169, 0.15);
+    box-shadow: 0 0 0 3px rgba(216, 76, 110, 0.15);
 }
 
 .preview-box {
@@ -1119,7 +1119,7 @@ a:hover {
 }
 
 .info-card {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--pastel-beige));
+    background: linear-gradient(135deg, var(--primary-rose-light), #F5F5F5);
     padding: 30px;
     border-radius: 12px;
     margin-bottom: 25px;
@@ -1160,7 +1160,7 @@ a:hover {
 }
 
 .contact-hours {
-    background: linear-gradient(135deg, #FAE8F0, var(--pastel-beige));
+    background: linear-gradient(135deg, var(--primary-rose-light), #F5F5F5);
     padding: 30px;
     border-radius: 12px;
     border-top: 5px solid var(--primary-rose);
@@ -1176,7 +1176,7 @@ a:hover {
 }
 
 .contato-form {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--pastel-beige));
+    background: linear-gradient(135deg, var(--primary-rose-light), #F5F5F5);
     padding: 35px;
     border-radius: 12px;
     height: fit-content;
@@ -1221,7 +1221,7 @@ a:hover {
 .contato-form textarea:focus {
     outline: none;
     border-color: var(--primary-rose-dark);
-    box-shadow: 0 0 0 3px rgba(232, 168, 200, 0.15);
+    box-shadow: 0 0 0 3px rgba(216, 76, 110, 0.15);
 }
 
 .contato-form textarea {
@@ -1260,7 +1260,7 @@ a:hover {
 /* ===== WHY SECTION ===== */
 .why-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--primary-cream));
+    background: linear-gradient(135deg, var(--primary-rose-light), var(--primary-cream));
     position: relative;
     overflow: hidden;
 }
@@ -1478,7 +1478,7 @@ a:hover {
     background: var(--primary-rose);
     border-color: var(--primary-rose);
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(212, 144, 158, 0.3);
+    box-shadow: 0 5px 15px rgba(216, 76, 110, 0.3);
     color: white;
 }
 
@@ -1504,7 +1504,7 @@ a:hover {
     background-color: var(--primary-rose);
     color: white;
     transform: translateX(10px);
-    box-shadow: 0 5px 15px rgba(212, 144, 158, 0.3);
+    box-shadow: 0 5px 15px rgba(216, 76, 110, 0.3);
 }
 
 .footer-bottom {
@@ -1529,7 +1529,7 @@ a:hover {
 
 /* ===== TRABALHOS - NOVOS ESTILOS ===== */
 .work-type-card {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--primary-cream));
+    background: linear-gradient(135deg, var(--primary-rose-light), var(--primary-cream));
     padding: 40px;
     border-radius: 12px;
     margin-bottom: 30px;
@@ -1804,7 +1804,7 @@ a:hover {
 }
 
 .palette-description {
-    background: linear-gradient(135deg, var(--pastel-rose-light), var(--primary-cream));
+    background: linear-gradient(135deg, var(--primary-rose-light), var(--primary-cream));
     padding: 35px 30px;
     border-radius: 12px;
     border-left: 5px solid var(--primary-rose);

@@ -1826,8 +1826,180 @@ a:hover {
     color: var(--text-gray);
 }
 
-/* ===== RESPONSIVE VISUALIZADOR ===== */
+/* ===== RESPONSIVIDADE TABLET (768px) ===== */
 @media (max-width: 768px) {
+    /* Navbar */
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--primary-cream);
+        list-style: none;
+        border-top: 1px solid var(--border-light);
+        padding: 15px 0;
+        box-shadow: var(--shadow-md);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: block;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Tipografia */
+    h1 { font-size: 48px; }
+    h2 { font-size: 36px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 16px; }
+
+    /* Hero */
+    .hero {
+        padding: 60px 0;
+        min-height: auto;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .hero-subtitle {
+        font-size: 22px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-visual {
+        height: 400px;
+    }
+
+    .hero::after {
+        display: none;
+    }
+
+    .plant-large { font-size: 140px; }
+    .plant-medium { font-size: 80px; }
+    .plant-small { font-size: 60px; }
+
+    /* Grids */
+    .paletas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .servicos-section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .about-grid,
+    .contato-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .highlights-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    /* Cards */
+    .paleta-card {
+        padding: 20px;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 50px 0;
+    }
+
+    .page-header h1 {
+        font-size: 38px;
+    }
+
+    /* Formulário */
+    .contato-form {
+        position: static;
+    }
+
+    /* Visualizador */
+    .palette-selector {
+        gap: 8px;
+    }
+
+    .palette-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .color-visualizer {
+        padding: 25px 15px;
+    }
+
+    .palette-display {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    .palette-colors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 12px;
+        margin-bottom: 30px;
+    }
+
+    .color-box {
+        height: 100px;
+    }
+
+    .color-info {
+        padding: 12px 10px;
+    }
+
+    .palette-description {
+        padding: 20px;
+    }
+
+    .palette-description h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .palette-description p {
+        font-size: 13px;
+    }
+}
     .palette-selector {
         gap: 8px;
     }
@@ -1875,61 +2047,192 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    .palette-selector {
-        gap: 6px;
+    /* Container */
+    .container {
+        padding: 0 15px;
     }
 
-    .palette-btn {
-        padding: 6px 12px;
-        font-size: 11px;
+    /* Navbar */
+    .navbar {
+        padding: 12px 0;
     }
 
-    .palette-display {
-        height: 160px;
+    .nav-brand {
+        font-size: 16px;
         gap: 8px;
     }
 
-    .palette-colors-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 63px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding-top: 10px;
+        z-index: 999;
+    }
+
+    .nav-menu a {
+        border-bottom: 1px solid var(--border-light);
+    }
+
+    /* Tipografia */
+    h1 { font-size: 32px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+
+    /* Botões */
+    .btn {
+        padding: 12px 24px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 0;
+        min-height: 600px;
+    }
+
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 0 15px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-divider {
+        width: 60px;
+        height: 4px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
         gap: 10px;
     }
 
-    .color-box {
-        height: 80px;
+    .hero-buttons .btn {
+        width: 100%;
     }
 
-    .color-info {
-        padding: 10px 8px;
+    .hero-visual {
+        height: 350px;
     }
 
-    .color-info h4 {
-        font-size: 10px;
+    .plant-large { 
+        font-size: 120px; 
     }
 
-    .color-info code {
-        font-size: 10px;
-        padding: 6px 8px;
-        margin-bottom: 8px;
+    .plant-medium { 
+        font-size: 70px; 
     }
 
-    .copy-btn {
-        padding: 4px 8px;
-        font-size: 9px;
+    .plant-small { 
+        font-size: 50px; 
     }
 
+    .leaf, .flower {
+        font-size: 40px;
+    }
+
+    /* Seções */
+    .about-section,
+    .trabalhos-section,
+    .servicos-section,
+    .contato-section,
+    .values-section,
+    .why-section,
+    .cta-section {
+        padding: 40px 0;
+    }
+
+    /* Grids */
+    .about-grid,
+    .contato-grid,
+    .paletas,
+    .highlights-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .trabalhos-grid,
+    .work-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .page-header {
+        padding: 40px 0;
+    }
+
+    .page-header h1 {
+        font-size: 30px;
+    }
+
+    /* Cards */
+    .paleta-card {
+        padding: 15px;
+    }
+
+    .servico-card,
+    .info-card {
+        padding: 20px;
+    }
+
+    /* Formulário */
+    .contato-form {
+        padding: 20px;
+        position: static;
+    }
+
+    .config-options {
+        grid-template-columns: 1fr;
+    }
+
+    /* Filtros */
+    .filtro-trabalhos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filtro-btn {
+        width: 100%;
+        padding: 10px 16px;
+    }
+
+    /* Footer */
     .footer {
-        padding: 60px 0 20px;
+        padding: 40px 0 20px;
     }
 
     .footer-header {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 30px;
+        gap: 25px;
+        padding: 20px;
         max-width: none;
+    }
+
+    .footer-header h2 {
+        font-size: 24px;
     }
 
     .footer-links h4,
@@ -1949,201 +2252,80 @@ a:hover {
     }
 
     .social-links {
-        gap: 12px;
+        gap: 10px;
     }
 
     .social-links a {
-        width: 38px;
-        height: 38px;
-        font-size: 16px;
-    }
-}
-
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        padding-top: 30px;
-    }
-
-    .hero-title {
-        font-size: 42px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    h1 { font-size: 42px; }
-    h2 { font-size: 32px; }
-
-    .about-grid,
-    .contato-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .contato-form {
-        position: static;
-        top: auto;
-    }
-
-    .paletas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .page-header {
-        padding: 60px 0;
-    }
-
-    .page-header h1 {
-        font-size: 40px;
-    }
-
-    .work-grid,
-    .servicos-section .container {
-        grid-template-columns: 1fr;
-    }
-
-    .highlights-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .leaf, .flower {
-        font-size: 50px;
-    }
-
-    .scroll-indicator {
-        display: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-
-    h1 { font-size: 32px; }
-    h2 { font-size: 26px; }
-    h3 { font-size: 20px; }
-
-    .navbar {
-        padding: 15px 0;
-    }
-
-    .nav-brand {
-        font-size: 18px;
-        gap: 8px;
-    }
-
-    .logo-img {
         width: 40px;
         height: 40px;
+        font-size: 16px;
     }
 
-    .hero {
-        padding: 60px 0 50px;
-        min-height: 550px;
+    /* Visualizador */
+    .palette-selector {
+        gap: 5px;
+        flex-wrap: wrap;
     }
 
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: 50px;
-        padding: 0 20px;
+    .palette-btn {
+        padding: 6px 12px;
+        font-size: 11px;
     }
 
-    .hero::after {
-        right: -250px;
-        width: 400px;
-        height: 400px;
-        opacity: 0.3;
+    .color-visualizer {
+        padding: 20px 15px;
     }
 
-    .hero-title {
-        font-size: 44px;
-        line-height: 1.15;
+    .palette-display {
+        height: 150px;
+        gap: 8px;
+        margin-bottom: 20px;
     }
 
-    .hero-subtitle {
-        font-size: 20px;
+    .palette-colors-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
-    .hero-buttons {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
+    .color-box {
+        height: 70px;
     }
 
-    .hero-buttons .btn {
-        width: 100%;
-        text-align: center;
+    .color-info {
+        padding: 8px 6px;
     }
 
-    .hero-visual {
-        height: 350px;
+    .color-info h4 {
+        font-size: 11px;
     }
 
-    .plant-large { font-size: 120px; }
-    .plant-medium { font-size: 70px; }
-    .plant-small { font-size: 50px; }
-
-    .paletas {
-        grid-template-columns: 1fr;
+    .color-info code {
+        font-size: 9px;
+        padding: 4px 6px;
+        margin-bottom: 6px;
     }
 
-    .paleta-card {
+    .copy-btn {
+        padding: 4px 8px;
+        font-size: 9px;
+    }
+
+    .palette-description {
         padding: 15px;
     }
 
-    .highlights-grid {
-        grid-template-columns: 1fr;
+    .palette-description h3 {
+        font-size: 16px;
+        margin-bottom: 8px;
     }
 
-    .about-section,
-    .trabalhos-section,
-    .servicos-section,
-    .contato-section,
-    .values-section,
-    .why-section,
-    .cta-section {
-        padding: 50px 0;
+    .palette-description p {
+        font-size: 12px;
     }
 
-    .hero-visual {
+    /* Scroll Indicator */
+    .scroll-indicator {
         display: none;
-    }
-
-    .servico-card,
-    .info-card {
-        padding: 25px;
-    }
-
-    .paletas {
-        grid-template-columns: 1fr;
-    }
-
-    .config-options {
-        grid-template-columns: 1fr;
-    }
-
-    .contato-form {
-        padding: 25px;
-    }
-
-    .filtro-trabalhos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .filtro-btn {
-        width: 100%;
-    }
-
-    .leaf, .flower {
-        font-size: 40px;
     }
 }

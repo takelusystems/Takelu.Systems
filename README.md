@@ -1,6 +1,9 @@
 # � Takelu Systems - Portfólio Profissional
 
-Bem-vindo ao seu site de portfólio! Este é um website **multi-páginas** moderno e responsivo desenvolvido com design profissional e cores pastéis (rosa, verde e tons naturais) que destaca as múltiplas opções de paletas de cores para seus clientes escolherem.
+Bem-vindo ao seu site de portfólio! Este é um website **multi-páginas** moderno e responsivo desenvolvido com design profissional que destaca as múltiplas opções de paletas de cores para seus clientes escolherem.
+
+## 🌐 Link do Site
+**Visite o site em:** [https://takelusystems.github.io/Takelu.Systems/](https://takelusystems.github.io/Takelu.Systems/)
 
 ## 📌 Informação Importante
 Este site foi desenvolvido para ser hospedado no **GitHub Pages**. Qualquer dúvida sobre como fazer deploy, consulte a seção "Publicar no GitHub Pages".
@@ -24,21 +27,21 @@ Portifolio/
 └── README.md               # Este arquivo
 ```
 
-## 🎨 Paleta de Cores (PROFISSIONAL COM TONS PASTÉIS)
+## 🎨 Paleta de Cores (PROFISSIONAL COM DESIGN MODERNO)
 
 ### Cores Principais
-- **Rosa Pastel**: #E8A8C8 (primária)
-- **Rosa Pastel Escura**: #D97BA9 (hover)
-- **Verde Pastel**: #A8D4A8 (secundária)
-- **Verde Pastel Escuro**: #7DB57D (hover)
-- **Creme**: #FFFBF7 (background)
-- **Preto Suave**: #3D3D3D (textos)
+- **Rosa Primária**: #D84C6E (cor principal)
+- **Rosa Escura**: #A83A54 (hover/acentos)
+- **Rosa Clara**: #F5D9E8 (backgrounds claros)
+- **Branco/Creme**: #FAFAFA (background principal)
+- **Cinza Neutro**: #E8E8E8 (divisores)
+- **Preto Suave**: #1A1A1A (textos)
 
-### Tons Complementares
-- Rosa Pastel Claro: #F5D5E8
-- Verde Pastel Claro: #E8F0E8
-- Bege Pastel: #E8D9D0
-- Design profissional e versátil para todas as indústrias
+### Design
+- Paleta moderna e equilibrada
+- Foco em acessibilidade e legibilidade
+- Design profissional com acentos rose elegantes
+- Compatível com múltiplas indústrias
 
 ## 📂 Como Usar
 
